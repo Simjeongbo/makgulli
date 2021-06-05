@@ -1,0 +1,708 @@
+/* #ffeeaa #ffffdc #cbbc7a  */
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Sigmar+One&family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@800&family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic+Coding&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  padding-top: 1%;
+  display: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.banner {
+  padding: 2vw 100px;
+  position: relative;
+  height: 105vh;
+  min-height: 1400px;
+  background: url(./막걸리.jpg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Gothic A1', sans-serif;
+  z-index: 0.3;
+  opacity: 1;
+}
+
+.textBx {
+  position: relative;
+  margin-top: 3vw;
+  height: 50vh;
+}
+.textBx a {
+  margin-top: 4em;
+  font-family: 'Yeon Sung', cursive;
+  animation: animate1 2.3s;
+}
+@keyframes animate1
+{
+  0% {
+    left: -50em;
+  }
+  19% {
+    margin-right: 0em;
+  }
+  60% {
+    left: 0em;
+    margin-right: 1.81em;
+  }
+  100% {
+    margin-right: 0em;
+    left: 0;
+  }
+}
+
+.banner h2 {
+  font-size: 3.5em;
+  margin-left: 0.2em;
+  color: #2b2b2b;
+  animation: animate2 1.1s;
+}
+@keyframes animate2
+{
+  0% {
+    margin-left: -50em;
+  }
+  100% {
+    margin-left: 0.2em;
+  }
+}
+
+.text {
+  color: #414141;
+  font-size: 15em; 
+  font-family: 'Black Han Sans', sans-serif;
+}
+.text span:nth-child(1) {
+  animation: animate3 1.5s;
+}
+.text span:nth-child(2) {
+  animation: animate3 2.0s;
+}
+.text span:nth-child(3) {
+  animation: animate3 2.5s;
+}
+@keyframes animate3
+{
+  0% {
+    opacity: 0;
+  }
+  60%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.banner h3 {
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.heading {
+  background-color: #ffeeaa;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 150px;
+  
+}
+.heading h2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+
+/* 소셜아래 설명칸 ---------------------------------------------------------*/
+
+.info {
+  overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: relative;
+  left: 0px;
+  width: 1100px;
+  height: 400px;
+  margin-top: 20px;
+  transition :transform 1s, box-shadow 0.3s;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  z-index: 1;
+  animation: animate4 1.4s;
+}
+@keyframes animate4
+{
+  0% {
+    left: -100em;
+  }
+  100% {
+    left: 0em;
+  }
+}
+
+.info.active {
+  transform: translateX(-100%);
+}
+
+.info::before, .info::after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 40%;
+  z-index: -1;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.info::before {
+  left: 55%;
+  bottom: -5%;
+  background-color: rgba(69, 105, 144, 0.2);
+  animation: waves 6s infinite linear;
+}
+
+.info::after {
+  left: 60%;
+  bottom: -45%;
+  background-color: rgb(248, 227, 168);
+  animation: waves 7s infinite;
+}
+
+@keyframes waves
+{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* page 설정 -------------------------------------------------------------*/
+
+section {
+  padding-top: 0;
+}
+
+
+/* 역사 */
+#aboutIt {
+  padding-top: 0;
+
+}
+
+#section1 {
+  width: 100%;
+  height: 1000px;
+  background: red;
+}
+#section2 {
+  width: 100%;
+  height: 1000px;
+  background: blue;
+}
+#section3 {
+  width: 100%;
+  height: 1000px;
+  background: green;
+}
+#section4 {
+  width: 100%;
+  height: 1000px;
+  background: yellow;
+}
+#section5 {
+  width: 100%;
+  height: 1000px;
+  background: orange;
+}
+
+
+
+
+/* 만드는 과정 */
+#historys {
+  margin-bottom: 100px;
+}
+
+
+/* 여러가지 막걸리 */
+
+#howToMake {
+  overflow:hidden;
+}
+
+.small-header {
+  background-color: #cbbc7a;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80px;
+
+}
+
+.deck {
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  height: 1000px;
+  background-color: #ffeeaa;
+  
+}
+
+.deck > ul {
+  font-size:0;
+  text-align: center;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.deck > ul::-webkit-scrollbar {
+  width: 30px;
+}
+.deck > ul::-webkit-scrollbar-thumb {
+  background-color: #2f3542;
+}
+.deck > ul::-webkit-scrollbar-track {
+  background-color: grey
+}
+
+.deck > ul > li {
+  display:inline-block;
+  margin-left: 30px;
+}
+.deck > ul > li .card {
+  position:relative;
+  overflow:hidden;
+}
+
+.card {
+  display: flex;
+  border-radius: 9px;
+  width:  500px;
+  height: 800px;
+  margin-top: 110px;  
+  background-color: #fffff0;
+  box-shadow: 0 5px 6px rgba(0,0,0,0.3), 0 5px 6px rgba(0,0,0,0.5);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  z-index: 3;
+  border: 3px solid #000000a9;
+}
+
+.card .img {
+  position: absolute;
+  width: 100%;
+  height: 65%;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card .exp {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  height: 35%;
+  font-size: 30px;
+  margin-left: 5%;
+  text-align: left;
+}
+
+.card .exp p {
+  margin-top: 20px;
+}
+
+.card .exp p .exp_1 {
+  font-family: 'Do Hyeon', sans-serif;
+}
+.card .exp p .exp_2 {
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-size: 18px;
+}
+
+
+
+#img1  {
+  background-size:400px;
+  background-image: url(./img/other1.jpg) ;
+}
+#img2  {
+  background-size:400px;
+  background-image: url(./img/other2.jpg) ;
+}
+#img3  {
+  background-size:400px;
+  background-image: url(./img/other3.jpg) ;
+}
+#img4  {
+  background-size:400px;
+  background-image: url(./img/other4.jpg) ;
+}
+#img5  {
+  background-size:400px;
+  background-image: url(./img/other5.jpg) ;
+}
+#img6  {
+  background-size:400px;
+  background-image: url(./img/other6.jpg) ;
+}
+#img7  {
+  background-size:400px;
+  background-image: url(./img/other7.jpg) ;
+}
+#img8  {
+  background-size:400px;
+  background-image: url(./img/other8.jpg) ;
+}
+
+/* 다른 술 */
+
+
+.wrapper {
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  display: none;
+  background-color: rgb(219, 219, 219);
+}
+
+
+#floor1 {
+  background-color: #ffeeaa;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 12%;
+  width: 100%;
+}
+
+.groups {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  background-color: rgb(250, 250, 250);
+  
+}
+
+.groups video {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#group {
+  width: 25%;
+  overflow: hidden;
+}
+#group img {
+  width: 80vw;
+}
+
+
+
+
+
+
+
+
+
+/* page 버튼 -------------------------------------------------------------*/
+.btn {
+  position: relative;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  padding: 28px 56px;
+  margin-left: -2px;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  overflow: hidden;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  border-radius: 50px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  z-index: 1;
+  
+}
+.btn:hover {
+  font-weight: 900;
+}
+
+.btn::before, .btn::after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 40%;
+  z-index: -1;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn::before {
+  left: 25%;
+  bottom: -500%;
+  background-color: rgba(154, 201, 207, 0.2);
+  animation: waves 6s infinite linear;
+}
+
+
+.btn::after {
+  left: 10%;
+  bottom: -560%;
+  background-color: rgb(248, 227, 168);
+  animation: waves 7s infinite;
+}
+
+@keyframes waves
+{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* 오른쪽 소셜아이콘 -----------------------------------------------------*/
+
+.social {
+  position: fixed;
+  top: 19em;
+  right: 3%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  animation: animate5 2s ;
+}
+@keyframes animate5
+{
+  0% {
+    right: -10%;
+  }
+  100% {
+    right: 3%;
+  }
+}
+
+
+.social.active {
+  top: 31.5em;
+}
+
+.social a {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  background-color: #ffeeaa;
+  border: 1px solid #cbcbcb;
+  border-radius: 50px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+
+.social i{
+  color:#2b2b2b;
+  font-size: 40px;
+}
+
+.social a:hover {
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all ease 0.5s;
+}
+
+.social a:hover i {
+  color: #FFFFFF;
+  transition: all ease 0.5s;
+}
+
+
+
+#set {
+  display: flex;
+  animation: animate6 3s infinite;
+}
+#set:hover{
+  background: black;
+  
+}
+@keyframes animate6
+{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+#home:hover {
+  background: #ec4705;
+}
+#google:hover {
+  background: #00d9ff;
+}
+#youtube:hover {
+  background: #ff0808;
+}
+#insta:hover {
+  background: #f04695;
+}
+#up{
+  display: flex;
+}
+#up:hover {
+  background: #0000009c;
+}
+#home.active,
+#google.active,
+#youtube.active,
+#insta.active {
+  display: flex;
+}
+
+.social div {
+  position: absolute;
+  z-index: -3;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  color: black;
+  text-align: center;
+  transition: width 0.5s;
+  overflow: hidden;
+  font-family: 'Yeon Sung', cursive;
+}
+
+.social span {
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  font-size: 33px;
+}
+
+#home:hover div {
+  width: 250px;
+}
+#google:hover div {
+  width: 220px;
+}
+#youtube:hover div {
+  width: 240px;
+}
+#insta:hover div {
+  width: 320px;
+}
+#up:hover div {
+  width: 220px;
+}
+
+
+
+/* footer -------------------------------------------------------------*/
+
+#footer{
+  position: relative;
+  background-color: #fffff0;
+  height: 200px;
+  width: 100vw;
+  bottom: 0;
+  color: #2b2b2b ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Do Hyeon', sans-serif;
+  display: flex;
+}
+
+.footer-menu {
+  display: flex;
+  list-style: none;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+.footer-content {
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-menu li {
+  cursor: pointer;
+  margin: 30PX 30PX;
+}
+
+.footer-menu #center {
+  font-size: 40px;
+}
+
+
+@media screen and (max-width: 1150px){
+  #footer{
+    height: 320px;
+  
+  }
+  .footer-menu {
+    display:inline;
+    text-align: center;
+  }
+  .footer-menu li {
+    cursor: pointer;
+    margin: 10PX 30PX;
+    font-size: 18px;
+  }
+  .footer-menu #center {
+    margin: 20PX 30PX;
+    font-size: 30px;
+  }
+}
